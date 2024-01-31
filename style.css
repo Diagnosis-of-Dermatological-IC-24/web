@@ -93,19 +93,21 @@ ul li a {
   color: #555;
 }
 
-.content{
+.content {
   margin-top: 15%;
   width: 900px;
   margin-left: 5%;
+  position: relative;
 }
-.content h1{
-  font-style: 70px;
-  color:#222;
-}
-.content p{
-  margin:10px 0 50px;
-  color:#333;
 
+.content h1 {
+  font-size: 50px; /* Corrected typo from "font-style" to "font-size" */
+  color: #222;
+}
+
+.content p {
+  margin: 10px 0 50px;
+  color: #333;
 }
 
 h1 {
@@ -113,18 +115,20 @@ h1 {
   margin-bottom: 10px;
 }
 
-.btn {
+.content a {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
+  padding: 15px 5px;
+  background-color: #e3b8a4; /* Pink color */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  border-radius: 100px;
+  
 }
 
 .btn:hover {
-  background-color: #2980b9;
+  background-color: #e46b32; /* Darker pink on hover */
 }
 
 .image-container {
