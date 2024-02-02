@@ -1,13 +1,9 @@
-import { Navbar } from "./components/Navbar/Navbar";
-import { ScanMe } from "./components/ScanMe/ScanMe";
-import { SkinSolution } from "./components/SkinSolution/SkinSolution";
+import { AppRoutes } from "./AppRoutes";
 
 function App() {
   return (
     <>
-      <Navbar />
-      {/* <ScanMe /> */}
-      <SkinSolution />
+      <AppRoutes />
     </>
   );
 }

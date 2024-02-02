@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export const Navbar = () => {
   // State for menu visibility
   const [isMenuHidden, setMenuHidden] = useState(true);
+  const [isSticky, setSticky] = useState(false);
 
   // Toggle menu visibility
   const toggleMenu = () => {

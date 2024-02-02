@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const SkinSolution = () => {
   return (
@@ -10,7 +11,10 @@ export const SkinSolution = () => {
         <p className="text-xl mt-10 mx-3 md:ml-10">
           With 30-minute by AI Model predict the skin disease causing
         </p>
-        <p className="text-2xl mt-6 md:mt-10 md:ml-10">SCAN YOUR SKIN →</p>
+        {/* <p>SCAN YOUR SKIN →</p> */}
+        <div className="text-2xl mt-6 md:mt-10 md:ml-10">
+            <Link to="/scan-me">SCAN YOUR SKIN →</Link>
+        </div>
       </div>
       <div className="flex justify-center md:justify-end mt-6 md:mt-0 p-4">
         <img
