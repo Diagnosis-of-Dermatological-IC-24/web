@@ -2,8 +2,7 @@ import React from "react";
 
 export const ScanMe = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-n3 h-screen">
-      <div className="grid md:grid-cols-2 justify-between">
+    <div className="grid md:grid-cols-2 justify-between mt-[50px]">
         <div className="text-center md:text-left p-4 md:p-0">
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl mx-3 md:ml-10">
             Submit information about your skin
@@ -18,6 +17,5 @@ export const ScanMe = () => {
           />
         </div>
       </div>
-    </div>
   );
 };
