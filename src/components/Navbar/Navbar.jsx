@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 export const Navbar = () => {
   // State for menu visibility
@@ -13,9 +15,9 @@ export const Navbar = () => {
   return (
     <React.Fragment>
       <nav className="relative px-4 py-4 flex justify-between items-center bg-[#F0EAE6]">
-        <a className="text-3xl leading-none" href="#">
-          Imagex
-        </a>
+      <Link className="text-3xl leading-none" to="/SkinSolution">
+  Imagex
+</Link>
         <div className="lg:hidden">
           <button
             className="navbar-burger flex items-center text-black-600 p-3"
@@ -36,11 +38,15 @@ export const Navbar = () => {
             isMenuHidden ? "hidden" : ""
           }`}
         >
-          <li>
-            <a className="text-md text-gray-400 hover:text-gray-500" href="#">
-              SHOP ALL
-            </a>
-          </li>
+           <li className="mb-1">
+                <Link
+                  to="/shop-all"
+                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-black-600 rounded"
+                >
+                  SHOP ALL
+                </Link>
+              </li>
+
           <li className="text-gray-300"></li>
           <li>
             <a className="text-md text-gray-400 hover:text-gray-500" href="#">
